@@ -35,7 +35,7 @@ const Navbar = () => {
                     <p className={`pnav_${theme}`}>ShopNex</p>
                 </Link>
             </div>
-            <ul className="nav-menu">
+            <ul className={`nav-menu navmenu_${theme && theme}`}>
                 <li onClick={() => { setMenu("shop") }}>
                     <Link to='/'>Shop</Link>
                     {menu === "shop" ? <hr /> : <></>}
